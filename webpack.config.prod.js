@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     output: {
@@ -9,6 +10,12 @@ module.exports = {
     plugins: [
         new MiniCSSExtractPlugin()
     ],
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new CssMinimizerPlugin(),
+        ],
+    },
     mode: 'production',
     module: {
         rules: [{
