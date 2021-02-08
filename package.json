@@ -1,7 +1,7 @@
 {
-    "name": "knightspropertydevelopments",
+    "name": "taw-boilerplate",
     "version": "1.0.0",
-    "description": "Landing page for Knights Property Developments",
+    "description": "Boilerplate for Tailwind, alpine and webpack",
     "main": "./src/index.js",
     "scripts": {
         "start": "webpack --config webpack.config.js",
